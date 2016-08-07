@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\AITrainingStream.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{925C6C0C-C396-4D47-B01E-B84FE091FE2B}</UniqueIdentifier>
+			<UniqueIdentifier>{4CFB0CDE-CE6A-4A1F-BF58-9DAEF605DD95}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\AITrainingStream.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{418D9C61-3065-4AFC-98A5-2AF7A0D7E6B2}</UniqueIdentifier>
+			<UniqueIdentifier>{16E22B62-F488-43F5-8146-73469D13777E}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\AITrainingStream">
-			<UniqueIdentifier>{BD0B8902-DED3-44EE-B64E-5717192DA8C8}</UniqueIdentifier>
+			<UniqueIdentifier>{9E46DD9A-BFC5-49AD-8A0E-7C4C48E640E2}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\AITrainingStream\AITrainingStream.Build.cs">
 			<Filter>Source\AITrainingStream</Filter>

@@ -44,17 +44,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AAITrainingStreamCharacter); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITrainingStreamCharacter); \
 private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API AAITrainingStreamCharacter(AAITrainingStreamCharacter&&); \
-	NO_API AAITrainingStreamCharacter(const AAITrainingStreamCharacter&); \
+	/** Private copy-constructor, should never be used */ \
+	NO_API AAITrainingStreamCharacter(const AAITrainingStreamCharacter& InCopy); \
 public:
 
 
 #define AITrainingStream_Source_AITrainingStream_AITrainingStreamCharacter_h_9_ENHANCED_CONSTRUCTORS \
 private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API AAITrainingStreamCharacter(AAITrainingStreamCharacter&&); \
-	NO_API AAITrainingStreamCharacter(const AAITrainingStreamCharacter&); \
+	/** Private copy-constructor, should never be used */ \
+	NO_API AAITrainingStreamCharacter(const AAITrainingStreamCharacter& InCopy); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AAITrainingStreamCharacter); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITrainingStreamCharacter); \

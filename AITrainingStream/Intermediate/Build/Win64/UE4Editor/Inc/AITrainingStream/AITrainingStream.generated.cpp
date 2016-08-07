@@ -12,11 +12,11 @@ void EmptyLinkFunctionForGeneratedCode1AITrainingStream() {}
 	void AAITrainingStreamCharacter::StaticRegisterNativesAAITrainingStreamCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AAITrainingStreamCharacter, 3723476881);
+	IMPLEMENT_CLASS(AAITrainingStreamCharacter, 3262893823);
 	void AAITrainingStreamGameMode::StaticRegisterNativesAAITrainingStreamGameMode()
 	{
 	}
-	IMPLEMENT_CLASS(AAITrainingStreamGameMode, 1395981767);
+	IMPLEMENT_CLASS(AAITrainingStreamGameMode, 4084481603);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
@@ -60,6 +60,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("AITrainingStreamCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("AITrainingStreamCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ModuleRelativePath"), TEXT("AITrainingStreamCharacter.h"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ToolTip"), TEXT("Base look up/down rate, in deg/sec. Other scaling may affect final rate."));
@@ -82,7 +83,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AAITrainingStreamCharacter(Z_Construct_UClass_AAITrainingStreamCharacter, &AAITrainingStreamCharacter::StaticClass, TEXT("AAITrainingStreamCharacter"), false, nullptr, nullptr, nullptr);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAITrainingStreamCharacter(Z_Construct_UClass_AAITrainingStreamCharacter, &AAITrainingStreamCharacter::StaticClass, TEXT("AAITrainingStreamCharacter"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAITrainingStreamCharacter);
 	UClass* Z_Construct_UClass_AAITrainingStreamGameMode_NoRegister()
 	{
@@ -109,6 +110,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("AITrainingStreamGameMode.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("AITrainingStreamGameMode.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
 #endif
 			}
@@ -116,7 +118,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AAITrainingStreamGameMode(Z_Construct_UClass_AAITrainingStreamGameMode, &AAITrainingStreamGameMode::StaticClass, TEXT("AAITrainingStreamGameMode"), false, nullptr, nullptr, nullptr);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAITrainingStreamGameMode(Z_Construct_UClass_AAITrainingStreamGameMode, &AAITrainingStreamGameMode::StaticClass, TEXT("AAITrainingStreamGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAITrainingStreamGameMode);
 	UPackage* Z_Construct_UPackage__Script_AITrainingStream()
 	{
@@ -126,8 +128,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/AITrainingStream")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xEF656990;
-			Guid.B = 0x87F36F7E;
+			Guid.A = 0xF379D7EF;
+			Guid.B = 0x018E450A;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

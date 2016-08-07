@@ -44,17 +44,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_VTABLE_PTR_HELPER_CTOR(AITRAININGSTREAM_API, AAITrainingStreamGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITrainingStreamGameMode); \
 private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	AITRAININGSTREAM_API AAITrainingStreamGameMode(AAITrainingStreamGameMode&&); \
-	AITRAININGSTREAM_API AAITrainingStreamGameMode(const AAITrainingStreamGameMode&); \
+	/** Private copy-constructor, should never be used */ \
+	AITRAININGSTREAM_API AAITrainingStreamGameMode(const AAITrainingStreamGameMode& InCopy); \
 public:
 
 
 #define AITrainingStream_Source_AITrainingStream_AITrainingStreamGameMode_h_9_ENHANCED_CONSTRUCTORS \
 private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	AITRAININGSTREAM_API AAITrainingStreamGameMode(AAITrainingStreamGameMode&&); \
-	AITRAININGSTREAM_API AAITrainingStreamGameMode(const AAITrainingStreamGameMode&); \
+	/** Private copy-constructor, should never be used */ \
+	AITRAININGSTREAM_API AAITrainingStreamGameMode(const AAITrainingStreamGameMode& InCopy); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(AITRAININGSTREAM_API, AAITrainingStreamGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITrainingStreamGameMode); \

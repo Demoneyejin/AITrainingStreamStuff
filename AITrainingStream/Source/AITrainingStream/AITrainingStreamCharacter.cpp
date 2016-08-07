@@ -1,7 +1,6 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
 #include "AITrainingStream.h"
-#include "Kismet/HeadMountedDisplayFunctionLibrary.h"
 #include "AITrainingStreamCharacter.h"
 
 //////////////////////////////////////////////////////////////////////////
@@ -45,37 +44,29 @@ AAITrainingStreamCharacter::AAITrainingStreamCharacter()
 //////////////////////////////////////////////////////////////////////////
 // Input
 
-void AAITrainingStreamCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void AAITrainingStreamCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	// Set up gameplay key bindings
-	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	check(InputComponent);
+	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAxis("MoveForward", this, &AAITrainingStreamCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AAITrainingStreamCharacter::MoveRight);
+	InputComponent->BindAxis("MoveForward", this, &AAITrainingStreamCharacter::MoveForward);
+	InputComponent->BindAxis("MoveRight", this, &AAITrainingStreamCharacter::MoveRight);
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AAITrainingStreamCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AAITrainingStreamCharacter::LookUpAtRate);
+	InputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	InputComponent->BindAxis("TurnRate", this, &AAITrainingStreamCharacter::TurnAtRate);
+	InputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	InputComponent->BindAxis("LookUpRate", this, &AAITrainingStreamCharacter::LookUpAtRate);
 
 	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &AAITrainingStreamCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &AAITrainingStreamCharacter::TouchStopped);
-
-	// VR headset functionality
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AAITrainingStreamCharacter::OnResetVR);
+	InputComponent->BindTouch(IE_Pressed, this, &AAITrainingStreamCharacter::TouchStarted);
+	InputComponent->BindTouch(IE_Released, this, &AAITrainingStreamCharacter::TouchStopped);
 }
 
-
-void AAITrainingStreamCharacter::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
 
 void AAITrainingStreamCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
 {
