@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\AITrainingStream.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{925C6C0C-C396-4D47-B01E-B84FE091FE2B}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\AITrainingStream.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\AITrainingStreamEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{418D9C61-3065-4AFC-98A5-2AF7A0D7E6B2}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\AITrainingStream">
+			<UniqueIdentifier>{BD0B8902-DED3-44EE-B64E-5717192DA8C8}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\AITrainingStream\AITrainingStream.Build.cs">
+			<Filter>Source\AITrainingStream</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\AITrainingStream\AITrainingStream.cpp">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\AITrainingStream\AITrainingStream.h">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\AITrainingStream\AITrainingStreamCharacter.cpp">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\AITrainingStream\AITrainingStreamCharacter.h">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\AITrainingStream\AITrainingStreamGameMode.cpp">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\AITrainingStream\AITrainingStreamGameMode.h">
+			<Filter>Source\AITrainingStream</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
