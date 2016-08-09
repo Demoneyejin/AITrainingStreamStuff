@@ -1,3 +1,0 @@
-C:\Users\wolfw\Documents\AITrainingStreamStuff\AITrainingStream\Source\AITrainingStream\AITrainingStream.Build.cs
-C:\Users\wolfw\Documents\AITrainingStreamStuff\AITrainingStream\Source\AITrainingStream.Target.cs
-C:\Users\wolfw\Documents\AITrainingStreamStuff\AITrainingStream\Source\AITrainingStreamEditor.Target.cs
